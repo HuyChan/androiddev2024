@@ -1,217 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="bottom"
-    android:background="#FBFBFB"
-    android:backgroundTint="#FAFAFA"
     tools:context=".MainActivity">
 
-    <FrameLayout
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TableRow
-        android:id="@+id/class1"
-        android:layout_width="415dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="1dp"
-        android:background="#04557A"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TableRow
-        android:id="@+id/class2"
-        android:layout_width="413dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:background="#00BCD4"
-        android:backgroundTint="#03A9F4"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/class1">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginStart="16dp"
-            android:hapticFeedbackEnabled="false"
-            android:rotationX="0"
-            android:text="USTH Weather"
-            android:visibility="visible" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/tableRow2"
-        android:layout_width="138dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toStartOf="@+id/tableRow"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/class2">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="138dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:paddingHorizontal="40dp"
-            android:paddingVertical="15dp"
-            android:text=" Hà Nội"
-            android:visibility="visible" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/tableRow"
-        android:layout_width="138dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toStartOf="@+id/tableRow3"
-        app:layout_constraintStart_toEndOf="@+id/tableRow2"
-        app:layout_constraintTop_toBottomOf="@+id/class2">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="138dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:paddingHorizontal="50dp"
-            android:paddingVertical="15dp"
-            android:text="Paris"
-            android:visibility="visible" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/tableRow3"
-        android:layout_width="138dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tableRow"
-        app:layout_constraintTop_toBottomOf="@+id/class2">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="138dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:paddingHorizontal="40dp"
-            android:paddingVertical="15dp"
-            android:text="Đà Nẵng"
-            android:visibility="visible" />
-    </TableRow>
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="126dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="320dp"
-        android:adjustViewBounds="true"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/border_design" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="126dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="320dp"
-        android:layout_marginEnd="10dp"
-        android:adjustViewBounds="true"
-        android:rotationY="180"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/border_design" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="126dp"
-        android:layout_height="71dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="10dp"
-        android:adjustViewBounds="true"
-        android:rotationX="180"
-        android:rotationY="180"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/border_design" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="126dp"
-        android:layout_height="71dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="180dp"
-        android:adjustViewBounds="true"
-        android:rotationX="-180"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/border_design" />
-
-    <TableLayout
-        android:layout_width="409dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="420dp"
-        android:orientation="horizontal"
-        android:stretchColumns="3"
-        app:layout_constraintTop_toTopOf="@+id/class1"
-        tools:layout_editor_absoluteX="1dp">
-
-        <TableRow
-            android:layout_width="10dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <TableRow
-            android:layout_width="10dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical" />
+            android:background="#2064f7"
+            android:text="USTH Weather"
+            android:textColor="@color/white"
+            android:paddingLeft="20dp"
+            android:textSize="30sp"></TextView>
+    </LinearLayout>
 
-        <TableRow
-            android:layout_width="10dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-        <TableRow
-            android:layout_width="10dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical" />
-    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
