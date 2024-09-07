@@ -20,9 +20,9 @@ public class weatherActivity  extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        ForecastFrangment forecastFrangment = new ForecastFrangment();
         getSupportFragmentManager().beginTransaction()
-                .add(R.id.frameLayout, forecastFrangment)
+                .replace(R.id.cloudFragment , new CloudFragment())
+                .replace(R.id.fragment_forecast_frangment, new ForecastFrangment())
                 .commit();
     }
 

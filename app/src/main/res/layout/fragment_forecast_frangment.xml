@@ -9,253 +9,257 @@
     <!-- TODO: Update blank fragment layout -->
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-    <LinearLayout
-        android:layout_marginTop="100dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#d9f5f5"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal">
-        <TextView
-        android:layout_width="80dp"
-        android:layout_height="52dp"
-        android:text="Mon"
-        android:textSize="18dp"
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:paddingLeft="6dp">
-        </TextView>
-        <ImageView
-        android:layout_width="55dp"
-        android:layout_height="52dp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="20dp"
-        android:src="@drawable/cloudy">
-        </ImageView>
-
-        <TextView
-            android:layout_width="153dp"
-            android:layout_height="52dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Partly Cloudy\n20°C- 25°C"
-            android:textSize="18dp">
+            android:orientation="vertical">
 
-        </TextView>
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="550dp"
+                android:background="#d9f5f5"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#d9f5f5"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="52dp"
-            android:text="Tue"
-            android:textSize="18dp"
-            android:textColor="@color/black"
-            android:gravity="center"
-            android:paddingLeft="6dp">
-        </TextView>
-        <ImageView
-            android:layout_width="55dp"
-            android:layout_height="52dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/cloudy">
-        </ImageView>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:text="Mon"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
 
-        <TextView
-            android:layout_width="153dp"
-            android:layout_height="52dp"
-            android:gravity="center"
-            android:text="Partly Cloudy\n24°C- 27°C"
-            android:textSize="18dp">
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/cloudy" />
 
-        </TextView>
-    </LinearLayout>
+                <TextView
+                    android:layout_width="153dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="Partly Cloudy\n20°C- 25°C"
+                    android:textSize="18dp" />
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#d9f5f5"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="52dp"
-            android:text="Wed"
-            android:textSize="18dp"
-            android:textColor="@color/black"
-            android:gravity="center"
-            android:paddingLeft="6dp">
-        </TextView>
-        <ImageView
-            android:layout_width="55dp"
-            android:layout_height="52dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/cloudy">
-        </ImageView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#d9f5f5"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="153dp"
-            android:layout_height="52dp"
-            android:gravity="center"
-            android:text="Partly Cloudy\n24°C- 25°C"
-            android:textSize="18dp">
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:text="Tue"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
 
-        </TextView>
-    </LinearLayout>
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/cloudy" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#d9f5f5"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="52dp"
-            android:text="Thu"
-            android:textSize="18dp"
-            android:textColor="@color/black"
-            android:gravity="center"
-            android:paddingLeft="6dp">
-        </TextView>
-        <ImageView
-            android:layout_width="55dp"
-            android:layout_height="52dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/cloudy">
-        </ImageView>
+                <TextView
+                    android:layout_width="153dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="Partly Cloudy\n24°C- 27°C"
+                    android:textSize="18dp">
 
-        <TextView
-            android:layout_width="153dp"
-            android:layout_height="52dp"
-            android:gravity="center"
-            android:text="Partly Cloudy\n22°C- 25°C"
-            android:textSize="18dp">
+                </TextView>
+            </LinearLayout>
 
-        </TextView>
-    </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#d9f5f5"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#d9f5f5"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="52dp"
-            android:text="Fri"
-            android:textSize="18dp"
-            android:textColor="@color/black"
-            android:gravity="center"
-            android:paddingLeft="6dp">
-        </TextView>
-        <ImageView
-            android:layout_width="55dp"
-            android:layout_height="52dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/cloudy">
-        </ImageView>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:text="Wed"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
 
-        <TextView
-            android:layout_width="153dp"
-            android:layout_height="52dp"
-            android:gravity="center"
-            android:text="Partly Cloudy\n20°C- 25°C"
-            android:textSize="18dp">
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/cloudy" />
 
-        </TextView>
-    </LinearLayout>
+                <TextView
+                    android:layout_width="153dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="Partly Cloudy\n24°C- 25°C"
+                    android:textSize="18dp">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#d9f5f5"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="52dp"
-            android:text="Sat"
-            android:textSize="18dp"
-            android:textColor="@color/black"
-            android:gravity="center"
-            android:paddingLeft="6dp">
-        </TextView>
-        <ImageView
-            android:layout_width="55dp"
-            android:layout_height="52dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/cloudy">
-        </ImageView>
+                </TextView>
+            </LinearLayout>
 
-        <TextView
-            android:layout_width="153dp"
-            android:layout_height="52dp"
-            android:gravity="center"
-            android:text="Partly Cloudy\n21°C- 23°C"
-            android:textSize="18dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#d9f5f5"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-        </TextView>
-    </LinearLayout>
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:text="Thu"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#d9f5f5"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="horizontal">
-        <TextView
-            android:layout_width="80dp"
-            android:layout_height="52dp"
-            android:text="Sun"
-            android:textSize="18dp"
-            android:textColor="@color/black"
-            android:gravity="center"
-            android:paddingLeft="6dp">
-        </TextView>
-        <ImageView
-            android:layout_width="55dp"
-            android:layout_height="52dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="20dp"
-            android:src="@drawable/cloudy">
-        </ImageView>
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/cloudy" />
 
-        <TextView
-            android:layout_width="153dp"
-            android:layout_height="52dp"
-            android:gravity="center"
-            android:text="Partly Cloudy\n20°C- 25°C"
-            android:textSize="18dp">
+                <TextView
+                    android:layout_width="153dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="Partly Cloudy\n22°C- 25°C"
+                    android:textSize="18dp">
 
-        </TextView>
-    </LinearLayout>
+                </TextView>
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#d9f5f5"
+                android:gravity="center"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:text="Fri"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
 
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/cloudy" />
 
+                <TextView
+                    android:layout_width="153dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="Partly Cloudy\n20°C- 25°C"
+                    android:textSize="18dp">
 
+                </TextView>
+            </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#d9f5f5"
+                android:gravity="center"
+                android:orientation="horizontal">
 
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:text="Sat"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
 
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/cloudy" />
+
+                <TextView
+                    android:layout_width="153dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="Partly Cloudy\n21°C- 23°C"
+                    android:textSize="18dp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#d9f5f5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:text="Sun"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="55dp"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/cloudy" />
+
+                <TextView
+                    android:layout_width="153dp"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:text="Partly Cloudy\n20°C- 25°C"
+                    android:textSize="18dp">
+
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
 </LinearLayout>
