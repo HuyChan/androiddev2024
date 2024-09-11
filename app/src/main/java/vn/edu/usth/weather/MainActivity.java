@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ViewPager2 mviewPager;
     private BottomNavigationView bottomNavigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         mviewPager = findViewById(R.id.view_pager);
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        VIewPagerAdapter adapter = new VIewPagerAdapter(getSupportFragmentManager(), getLifecycle());
+        ViewAdapter adapter = new ViewAdapter(getSupportFragmentManager(), getLifecycle());
         mviewPager.setAdapter(adapter);
 
         mviewPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
@@ -90,40 +91,6 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-    private TabLayout tabLayout;
 
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
-        BottomNavigationView navigationView = findViewById(R.id.bottom_navigation);
-        navigationView.setOnItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public Fragment createFragment(int position) {
-                switch (position) {
-                    case 0:
-                        return new weatherActivity();
-                    case 1:
-                        return new CloudFragment();
-                    case 2:
-                        return new ForecastFrangment();
-
-
-                    default:
-                        return new weatherActivity();
-                }
-
-            }
-        });
-
-    }
-
-}

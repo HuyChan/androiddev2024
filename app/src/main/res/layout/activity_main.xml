@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.viewpager.widget.ViewPager
+    <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,34 +23,5 @@
         app:itemTextColor="@color/white"
         app:menu="@menu/bottom" />
 
-    <LinearLayout
-        android:id="@+id/frameLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#2064f7"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="70sp"
-            android:layout_gravity="center"
-            android:paddingVertical="15dp"
-            android:paddingLeft="20dp"
-            android:text="USTH Weather"
-            android:textColor="@color/white"
-            android:textSize="25sp" />
-    </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/cloudFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="10" />
-
-    <FrameLayout
-        android:id="@+id/fragment_forecast_frangment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
 
 </RelativeLayout>
