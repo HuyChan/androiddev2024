@@ -3,15 +3,15 @@
     <item
         android:id="@+id/action_home"
         android:icon="@drawable/home"
-        android:title="action_1" />
+        android:title="HongKong,China" />
 
     <item
         android:id="@+id/action_search"
         android:icon="@drawable/search"
-        android:title="action_3" />
+        android:title="HaNoi,VietNam" />
 
     <item
         android:id="@+id/action_menu"
         android:icon="@drawable/menu"
-        android:title="action_2" />
+        android:title="TouLouse,France" />
 </menu>

@@ -2,13 +2,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <FrameLayout
-        android:id="@+id/cloudFragment"
+        android:id="@+id/cloudFragment1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="10"/>
@@ -48,7 +47,6 @@
     />
 
     <FrameLayout
-        android:id="@+id/fragment_forecast_frangment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
     <!--        <androidx.viewpager2.widget.ViewPager2-->
