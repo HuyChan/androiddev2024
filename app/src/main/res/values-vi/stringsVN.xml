@@ -9,6 +9,8 @@
     <string name="Fri">Thứ 6</string>
     <string name="Sat">Thứ 7</string>
     <string name="Sun">Chủ Nhật</string>
+    <string name="Hanoi">Hà Nội</string>
+    <string name="HongKong">Hồng Kông</string>
 
     <string name="sunny">Nắng rực rỡ</string>
     <string name="rainy">Mưa tầm tã</string>

@@ -8,6 +8,7 @@ import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class ViewAdapter extends FragmentStateAdapter {
+    private static final int NUM_Page = 3;
 
     public ViewAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
         super(fragmentManager, lifecycle);
@@ -18,21 +19,21 @@ public class ViewAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position) {
             case 0:
-                return new fragment1();
+                return new allPage();
             case 1:
-                return new fragment2();
+                return new allPage();
             case 2:
-                return new fragment3();
+                return new allPage();
 
             default:
-                return new fragment1();
+                return new allPage();
         }
 
     }
 
     @Override
     public int getItemCount() {
-        return 3;
+        return NUM_Page;
     }
 }
 
