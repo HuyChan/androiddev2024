@@ -1,9 +1,27 @@
 <resources>
     <string name="app_name">USTH Weather</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="fragment_1">Hello blank fragment</string>
-    <string name="fragment_2">Hello blank fragment</string>
-    <string name="fragment_3">Hello blank fragment</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+<!--    &lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+<!--    <string name="fragment_1">fragment1</string>-->
+<!--    <string name="fragment_2">fragment2</string>-->
+<!--    <string name="fragment_3">fragment3</string>-->
+<!--    &lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
+<!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <string name="Mon">Monday</string>
+    <string name="Tue">Tuesday</string>
+    <string name="Wed">Wednesday</string>
+    <string name="Thu">Thursday</string>
+    <string name="Fri">Friday</string>
+    <string name="Sat">Saturday</string>
+    <string name="Sun">Sunday</string>
+
+
+    <string name="sunny">Bright sunny</string>
+    <string name="rainy">Heavy rain</string>
+    <string name="cloudy">Thick clouds</string>
+    <string name="windy">Strong wind</string>
+    <string name="stormy">Violent storm</string>
+    <string name="foggy">Dense fog</string>
+    <string name="drizzle">Light drizzle</string>
+    <string name="snowy">Snowy white</string>
+    <string name="clear_sky">Clear sky</string>
 </resources>
