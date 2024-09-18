@@ -94,7 +94,8 @@ public class WeatherActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-
+        MediaPlayer mPlayer = MediaPlayer.create(WeatherActivity.this, R.raw.music);
+        mPlayer.start();
         Log.i("start", "On start");
     }
 
