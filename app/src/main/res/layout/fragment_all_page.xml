@@ -12,7 +12,7 @@
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/frameTop"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         tools:layout="@layout/fragment_frame_top"
         android:name="vn.edu.usth.weather.frameTop"/>

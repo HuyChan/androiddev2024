@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameBottom"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".frameBottom"
-    android:id="@+id/frameBottom">
+    tools:context=".frameBottom">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,7 +21,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="550dp"
                 android:background="#d9f5f5"
                 android:gravity="center"
                 android:orientation="horizontal">
@@ -41,12 +41,26 @@
                     android:layout_marginRight="20dp"
                     android:src="@drawable/cloudy" />
 
-                <TextView
-                    android:layout_width="153dp"
-                    android:layout_height="52dp"
-                    android:gravity="center"
-                    android:text="Partly Cloudy\n20°C- 25°C"
-                    android:textSize="18dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="@string/rainy"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="20°C- 25°C"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -73,14 +87,26 @@
                     android:layout_marginRight="20dp"
                     android:src="@drawable/cloudy" />
 
-                <TextView
-                    android:layout_width="153dp"
-                    android:layout_height="52dp"
-                    android:gravity="center"
-                    android:text="Partly Cloudy\n24°C- 27°C"
-                    android:textSize="18dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                </TextView>
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="@string/clear_sky"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="20°C- 25°C"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -107,14 +133,26 @@
                     android:layout_marginRight="20dp"
                     android:src="@drawable/cloudy" />
 
-                <TextView
-                    android:layout_width="153dp"
-                    android:layout_height="52dp"
-                    android:gravity="center"
-                    android:text="Partly Cloudy\n24°C- 25°C"
-                    android:textSize="18dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                </TextView>
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="@string/snowy"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="20°C- 25°C"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -141,14 +179,26 @@
                     android:layout_marginRight="20dp"
                     android:src="@drawable/cloudy" />
 
-                <TextView
-                    android:layout_width="153dp"
-                    android:layout_height="52dp"
-                    android:gravity="center"
-                    android:text="Partly Cloudy\n22°C- 25°C"
-                    android:textSize="18dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                </TextView>
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="@string/stormy"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="20°C- 25°C"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -175,14 +225,26 @@
                     android:layout_marginRight="20dp"
                     android:src="@drawable/cloudy" />
 
-                <TextView
-                    android:layout_width="153dp"
-                    android:layout_height="52dp"
-                    android:gravity="center"
-                    android:text="Partly Cloudy\n20°C- 25°C"
-                    android:textSize="18dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                </TextView>
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="@string/clear_sky"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="20°C- 25°C"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -209,14 +271,26 @@
                     android:layout_marginRight="20dp"
                     android:src="@drawable/cloudy" />
 
-                <TextView
-                    android:layout_width="153dp"
-                    android:layout_height="52dp"
-                    android:gravity="center"
-                    android:text="Partly Cloudy\n21°C- 23°C"
-                    android:textSize="18dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                </TextView>
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="@string/foggy"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="20°C- 25°C"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -243,14 +317,26 @@
                     android:layout_marginRight="20dp"
                     android:src="@drawable/cloudy" />
 
-                <TextView
-                    android:layout_width="153dp"
-                    android:layout_height="52dp"
-                    android:gravity="center"
-                    android:text="Partly Cloudy\n20°C- 25°C"
-                    android:textSize="18dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                </TextView>
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="@string/drizzle"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:layout_width="153dp"
+                        android:layout_height="26dp"
+                        android:gravity="center"
+                        android:text="20°C- 25°C"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
