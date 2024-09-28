@@ -11,6 +11,13 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -33,13 +40,10 @@ import java.io.InputStream;
 
 import vn.edu.usth.weather.ViewAdapter;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link WeatherActivity#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class WeatherActivity extends AppCompatActivity {
 
+    private Handler handler;
     private ViewPager2 viewPager;
     private TabLayout tabLayout;
     private Toolbar toolbar;
@@ -95,16 +99,39 @@ public class WeatherActivity extends AppCompatActivity {
                 tabLayout.selectTab(tabLayout.getTabAt(position));
             }
         });
-        // set linear layout
-//        LinearLayout linearLayout = new LinearLayout(getBaseContext());
-//        View forecast_view = findViewById(R.id.forecast_fragment_container);
-//        linearLayout.addView(forecast_view);
 
-//        ForecastFragment forecastFragment = new ForecastFragment();
-//        getSupportFragmentManager().beginTransaction()
-//                .add(R.id.forecast_fragment_container, forecastFragment)
-//                .commit();
-//        setContentView(R.layout.background);
+         handler = new Handler(Looper.getMainLooper());
+
+        // Simulate a network request using a thread
+        simulateNetworkRequest();
+
+    }
+
+    private void simulateNetworkRequest() {
+        // Create a new thread to simulate the network request
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    // Simulate network delay (e.g., 3 seconds)
+                    Thread.sleep(9000);
+
+                    // After the "network request" is completed, update the UI using the Handler
+                    handler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            // Show a toast message on the main thread
+                            Toast.makeText(WeatherActivity.this, "Network request completed!", Toast.LENGTH_SHORT).show();
+                        }
+                    });
+
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
+
     }
 
     @Override
@@ -142,36 +169,36 @@ public class WeatherActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.bottom, menu);
+//        MenuInflater inflater = getMenuInflater();
+        getMenuInflater().inflate(R.menu.bottom, menu);
         return true;
     }
 
     @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        switch (item.getItemId()) {
-//            case R.id.action_reload:
-//                Toast.makeText(this, "Reload", Toast.LENGTH_SHORT).show();
-//                break;
-//
-//            case R.id.action_notification:
-//                Toast.makeText(this, "Notification", Toast.LENGTH_SHORT).show();
-//                break;
-//
-//            case action_edit:
-//                Toast.makeText(this, "Editting", Toast.LENGTH_SHORT).show();
-//                break;
-//        }
-        if (item.getItemId()== R.id.action_reload) {
-            Toast.makeText(this, "Reload", Toast.LENGTH_SHORT).show();
-        } else if (item.getItemId()== R.id.action_notification) {
-            Toast.makeText(this, "Notification", Toast.LENGTH_SHORT).show();
-        } else if (item.getItemId()== R.id.action_edit) {
-            Toast.makeText(this,"Editting", Toast.LENGTH_SHORT).show();
-        }
+        switch (item.getItemId()) {
+            case R.id.action_reload:
+                Toast.makeText(this, "Reload", Toast.LENGTH_SHORT).show();
+                break;
 
-        return false;
-//        return super.onOptionsItemSelected(item);
+            case R.id.action_notification:
+                Toast.makeText(this, "Notification", Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.action_edit:
+                Toast.makeText(this, "Editting", Toast.LENGTH_SHORT).show();
+                break;
+        }
+//        if (item.getItemId() == R.id.action_reload) {
+//            Toast.makeText(this, "Reload", Toast.LENGTH_SHORT).show();
+//        } else if (item.getItemId() == R.id.action_notification) {
+//            Toast.makeText(this, "Notification", Toast.LENGTH_SHORT).show();
+//        } else if (item.getItemId() == R.id.action_edit) {
+//            Toast.makeText(this, "Editting", Toast.LENGTH_SHORT).show();
+//        }
+//
+//        return false;
+        return super.onOptionsItemSelected(item);
     }
 }
