@@ -21,4 +21,8 @@
     <string name="drizzle">Mưa phùn nhẹ</string>
     <string name="snowy">Tuyết rơi trắng xóa</string>
     <string name="clear_sky">Trời quang đãng</string>
+    <string name="hello_blank_fragment">Xin Chao</string>
+
+    <string name="networkcomplete">Kết nối thành công</string>
+
 </resources>

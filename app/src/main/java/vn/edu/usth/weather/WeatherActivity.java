@@ -15,6 +15,8 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.widget.Toast;
+import android.os.AsyncTask;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -43,7 +45,7 @@ import vn.edu.usth.weather.ViewAdapter;
 
 public class WeatherActivity extends AppCompatActivity {
 
-    private Handler handler;
+//    private Handler handler;
     private ViewPager2 viewPager;
     private TabLayout tabLayout;
     private Toolbar toolbar;
@@ -100,41 +102,63 @@ public class WeatherActivity extends AppCompatActivity {
             }
         });
 
-         handler = new Handler(Looper.getMainLooper());
+//        // Simulate a network request using a thread
+//        handler = new Handler(Looper.getMainLooper());
+//        simulateNetworkRequest();
 
-        // Simulate a network request using a thread
-        simulateNetworkRequest();
+        new NetworkRequestTask().execute();
+
 
     }
 
-    private void simulateNetworkRequest() {
-        // Create a new thread to simulate the network request
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    // Simulate network delay (e.g., 3 seconds)
-                    Thread.sleep(9000);
+//    private void simulateNetworkRequest() {
+//        // Create a new thread to simulate the network request
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                try {
+//                    // Simulate network delay (e.g., 3 seconds)
+//                    Thread.sleep(9000);
+//
+//                    // After the "network request" is completed, update the UI using the Handler
+//                    handler.post(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            // Show a toast message on the main thread
+//                            Toast.makeText(WeatherActivity.this, "Network request completed!", Toast.LENGTH_SHORT).show();
+//                        }
+//                    });
+//
+//                } catch (InterruptedException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }).start();
+//
+//
+//    }
 
-                    // After the "network request" is completed, update the UI using the Handler
-                    handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            // Show a toast message on the main thread
-                            Toast.makeText(WeatherActivity.this, "Network request completed!", Toast.LENGTH_SHORT).show();
-                        }
-                    });
-
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+    private class NetworkRequestTask extends AsyncTask<Void,Void,String> {
+        @Override
+        protected String doInBackground(Void... voids) {
+            try {
+                Thread.sleep(4000);
             }
-        }).start();
-
-
-    }
+            catch (InterruptedException e)
+            {
+                e.printStackTrace();
+            }
+            return getString(R.string.networkcomplete);
+        }
 
     @Override
+    protected void onPostExecute(String s) {
+        Toast.makeText(WeatherActivity.this, s,Toast.LENGTH_SHORT).show();
+    }
+}
+
+
+@Override
     protected void onStart() {
         super.onStart();
         MediaPlayer mPlayer = MediaPlayer.create(WeatherActivity.this, R.raw.music);
