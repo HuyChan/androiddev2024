@@ -26,4 +26,10 @@
         tools:layout="@layout/fragment_frame_bottom"
         android:name="vn.edu.usth.weather.frameBottom"/>
 
+
+    <ImageView
+        android:id="@+id/Iamgeview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"/>
 </LinearLayout>

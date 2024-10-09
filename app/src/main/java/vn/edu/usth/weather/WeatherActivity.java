@@ -16,6 +16,8 @@ import android.os.Handler;
 import android.os.Looper;
 import android.widget.Toast;
 import android.os.AsyncTask;
+import java.net.URL;
+import java.net.URI;
 
 
 import androidx.appcompat.app.AppCompatActivity;
