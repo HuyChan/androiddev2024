@@ -1,0 +1,55 @@
+{
+  "city": "Hanoi",
+  "data": [
+    {
+      "main": {
+        "temp": 25.5
+      },
+      "weather": [
+        {
+          "description": "clear sky"
+        }
+      ]
+    },
+    {
+      "main": {
+        "temp": 28.2
+      },
+      "weather": [
+        {
+          "description": "few clouds"
+        }
+      ]
+    },
+    {
+      "main": {
+        "temp": 22.8
+      },
+      "weather": [
+        {
+          "description": "scattered clouds"
+        }
+      ]
+    },
+    {
+      "main": {
+        "temp": 18.5
+      },
+      "weather": [
+        {
+          "description": "light rain"
+        }
+      ]
+    },
+    {
+      "main": {
+        "temp": 30.1
+      },
+      "weather": [
+        {
+          "description": "sunny"
+        }
+      ]
+    }
+  ]
+}
